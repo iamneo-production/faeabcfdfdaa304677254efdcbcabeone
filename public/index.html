@@ -32,7 +32,7 @@
     width: 75px;
     border-radius: 10px;
   }
-  .result-container
+  .resul-container
   {
     background-color: rgba(255,255,255,0.8);
     border:1px solid #ccc;
@@ -66,7 +66,7 @@
           if(button.textContent===""){
             button.textContent = turn;
             turn = turn==="X"?"O":"X";
-            result.textContent='It s ${turn} s turn';
+            result.textContent='It is ${turn} s turn';
           }
         });
       });
@@ -93,7 +93,7 @@
       <button class="btn"></button>
     </div>
   </div>
-  <div class="result-container">
+  <div class="resul-container">
     <p class="result"></p>
   </div>
   <div class="reset">
