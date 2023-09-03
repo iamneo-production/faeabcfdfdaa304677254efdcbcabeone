@@ -57,19 +57,20 @@
 
   </style>
     <script type="text/javascript">
-      let buttons=document.querySelectorAll(".btn");
-      let result=document.querySelector(".result");
-      let turn="X";
-  
-      buttons.forEach(button=> {
-        button.addEventListener("click", () => {
-          if(button.textContent===""){
-            button.textContent = turn;
-            turn = turn==="X"?"O":"X";
-            result.textContent='It is ${turn} s turn';
-          }
-        });
-      });
+      let buttons = document.querySelectorAll(".btn");
+    let result = document.querySelector(".result");
+    let turn = "X";
+
+   buttons.forEach(button => {
+   button.addEventListener("click", () => {
+    if (button.textContent === "") {
+      button.textContent = turn;
+      turn = turn === "X" ? "O" : "X";
+      result.textContent = `It's ${turn}'s turn`;
+    }
+  });
+});
+
     </script>
 </head>
 <body>
