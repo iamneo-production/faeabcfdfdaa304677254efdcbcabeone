@@ -64,9 +64,9 @@
       buttons.forEach(button=> {
         button.addEventListener("click", () => {
           if(button.textContent===""){
-            button.textContent=turn;
+            button.textContent = turn;
             turn = turn==="X"?"O":"X";
-            result.textContent='It's ${turn}'s turn';
+            result.textContent='It s ${turn} s turn';
           }
         });
       });
