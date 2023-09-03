@@ -59,7 +59,19 @@
 </head>
 <body>
   <script>
-    
+    let buttons=document.querySelectorALL(".btn");
+    let result=document.querySelector(".result");
+    let turn="X";
+
+    buttons.forEach(button=> {
+      button.addEventListner("click", ()=>{
+        if(button.textContent===""){
+          button.textContent=turn;
+          turn =turn==="X"?"O":"X";
+          result.textContent='It's ${turn}
+        }
+      })
+    })
   </script>
   <header>
     <h1>Tic Tac Toe</h1>
